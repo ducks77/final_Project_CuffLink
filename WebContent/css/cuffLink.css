@@ -78,19 +78,19 @@
 .chat-right .chatwin .chat-top .t-left {float: left; width: 10%; }
 .chat-right .chatwin .chat-top .t-left a {color: #000; }
 .chat-right .chatwin .chat-top .t-left a:hover {color: #fff; }
-.chat-right .chatwin .chat-top .t-center {float: left; font-size: 16px; item-align: center; width: 80%; color: #fff;}
-.chat-right .chatwin .chat-top .t-right {float: left; width: 10%; }
+.chat-right .chatwin .chat-top .t-center {float: left; font-size: 16px; item-align: right; width: 80%; color: #fff;}
+.chat-right .chatwin .chat-top .t-right {float: left; width: 20%; item-align: right;}
 .chat-right .chatwin .chat-top .t-right a {color: #000; }
 .chat-right .chatwin .chat-top .t-right a:hover {color: #fff; }
 .chat-right .chatwin .chat-middle {padding-right: 0;width: 100%; height: 100%; color: #000; background-color: #CEF6EC; border: 1px solid #dedede; box-sizing: border-box; padding: 0px 0 0px 10px;}
 /* 스크롤처리부분 */
 .chat-right .chatwin .chat-middle .c-middle {height: 100%;overflow-y:scroll;}
 .chat-right .chatwin .chat-bottom {}
-.chat-right .chatwin .chat-bottom .b-left {padding-top: 10px; padding-left: 15px; float: left; width: 10%; box-sizing: border-box; }
+.chat-right .chatwin .chat-bottom .b-left {padding-top: 10px; padding-left: 0px; float: left; width: 5%; box-sizing: border-box; }
 .chat-right .chatwin .chat-bottom .b-left a {color: #000; }
 .chat-right .chatwin .chat-bottom .b-left a:hover {color: #fff; }
-.chat-right .chatwin .chat-bottom .b-center {float: left; font-size: 16px; item-align: center; width: 78%; color: #000;padding:1px 0 0 0; }
-.chat-right .chatwin .chat-bottom .b-center input {border-top: 0px solid #fff; border-bottom: 0px solid #fff; border-left: 1px solid #fff; border-right: 1px solid #fff;line-height: 44px; width:85%; }
+.chat-right .chatwin .chat-bottom .b-center {float: left; font-size: 16px; item-align: center; width: 80%; color: #000;padding:1px 0 0 0; }
+.chat-right .chatwin .chat-bottom .b-center input {border-top: 0px solid #fff; border-bottom: 0px solid #fff; border-left: 1px solid #fff; border-right: 1px solid #fff;line-height: 44px; width:80%; }
 .chat-right .chatwin .chat-bottom .b-right {padding-top: 10px; padding-right: 25px; float: left; width: 10%; box-sizing: border-box; }
 .chat-right .chatwin .chat-bottom .b-right a {color: #000; }
 .chat-right .chatwin .chat-bottom .b-right a:hover {color: #fff;}
