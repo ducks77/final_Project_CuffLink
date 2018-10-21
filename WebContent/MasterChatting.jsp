@@ -26,7 +26,7 @@
 		</div>
 	</div>
 	<script>
-		var socket = new WebSocket('ws://192.168.0.30:8080/WebSocketServer')
+		var socket = new WebSocket('ws://192.168.0.8:8080/WebSocketServer')
 		var data = []
 		socket.onopen = function() {
 			for(d of data){

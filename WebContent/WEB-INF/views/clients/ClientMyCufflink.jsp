@@ -133,27 +133,29 @@
 					</div>
 					<div style="padding: 13px;"></div>
 					<div class="ui" style="position: relative;padding-left: 5px; padding-right: 5px; padding-top: 0px; padding-bottom: 0px; text-align: left;">
-						<div class="ui column segment" style="padding-top: 30px;">
+<!-- 20181021 수정 ******************************************************************************* -->
+						<div class="ui column segment" style="padding-top: 10px;">
+
 							<div class="ui blue top left attached label" style="position: absolute; top: -10px;left: -10px;">
-								<a href="/project/projectRecruiting">>>지원자 모집중<<</a>
+								<a href="/project/projectRecruiting">지원자 모집중</a>
 							</div>
-							<div class="ui four column grid container" style="padding-left: 0px; padding-right: 0px; padding-top: 10px; padding-bottom: 0px; text-align: center;">
-								<div class="ui column" style="color:#fff; background-color:#848484; padding-left: 20px; padding-right: 0px; padding-top: 05px; padding-bottom: 05px; text-align: left; width: 40%">프로젝트 제목</div>
-								<div class="ui column" style="color:#fff; background-color:#848484; padding-left: 20px; padding-right: 0px; padding-top: 05px; padding-bottom: 05px; text-align: center; width: 20%">마감일자</div>
-								<div class="ui column" style="color:#fff; background-color:#848484; padding-left: 20px; padding-right: 0px; padding-top: 05px; padding-bottom: 05px; text-align: center; width: 20%">지원자 수</div>
-								<div class="ui column" style="color:#fff; background-color:#848484; padding-left: 20px; padding-right: 0px; padding-top: 05px; padding-bottom: 05px; text-align: center; width: 20%">도구</div>
+							<div class="ui four column grid container" style="padding-left: 0px; padding-right: 0px; padding-top: 0px; padding-bottom: 0px; text-align: center;">
+								<div class="ui column" style="color:#fff; background-color:#848484; padding-left: 20px; padding-right: 0px; padding-top: 05px; padding-bottom: 05px; text-align: left; margin-bottom: 20px;width: 55%;">프로젝트 제목</div>
+								<div class="ui column" style="color:#fff; background-color:#848484; padding-left: 20px; padding-right: 0px; padding-top: 05px; padding-bottom: 05px; text-align: center; margin-bottom: 20px; width: 15%">마감일자</div>
+								<div class="ui column" style="color:#fff; background-color:#848484; padding-left: 20px; padding-right: 0px; padding-top: 05px; padding-bottom: 05px; text-align: center; margin-bottom: 20px; width: 10%">지원자 수</div>
+								<div class="ui column" style="color:#fff; background-color:#848484; padding-left: 20px; padding-right: 0px; padding-top: 05px; padding-bottom: 05px; text-align: center; margin-bottom: 20px; width: 20%">도구</div>
 								<!-- 수정시작20181018 -->
 <%
 	if (userSupport == null || userSupport.size() <= 0) {
 %>
-								<div class="column" style="padding-left: 20px; padding-right: 0px; padding-top: 20px; padding-bottom: 0px; text-align: left; width: 40%">모집 중인 프로젝트가 없습니다.</div>
-								<div class="column" style="padding-left: 20px; padding-right: 0px; padding-top: 0px; padding-bottom: 0px; text-align: center; width: 20%">
+								<div class="column" style="padding-left: 20px; padding-right: 0px; padding-top: 20px; padding-bottom: 0px; text-align: left; width: 55%; font-size: 12px;">모집 중인 프로젝트가 없습니다.</div>
+								<div class="column" style="padding-left: 20px; padding-right: 0px; padding-top: 0px; padding-bottom: 0px; text-align: center; width: 15%; font-size: 12px;">
 									<!-- 마감일자 -->
 								</div>
-								<div class="column" style="padding-left: 20px; padding-right: 0px; padding-top: 0px; padding-bottom: 0px; text-align: center; width: 20%">
+								<div class="column" style="padding-left: 20px; padding-right: 0px; padding-top: 0px; padding-bottom: 0px; text-align: center; width: 10%; font-size: 12px;">
 									<!-- 지원자 수 -->
 								</div>
-								<div class="column" style="padding-left: 20px; padding-right: 0px; padding-top: 0px; padding-bottom: 0px; text-align: center; width: 20%">
+								<div class="column" style="padding-left: 20px; padding-right: 0px; padding-top: 0px; padding-bottom: 0px; text-align: center; width: 20%; font-size: 12px;">
 									<!-- 도구 -->
 								</div>
 								<div class="ui container" style="padding-top: 0px; padding-bottom: 10px; padding-left: 0px; padding-right: 0px;">
@@ -163,16 +165,16 @@
 	} else {
 	for (Map<String, Object> user : userSupport) {
 %>								
-								<div class="column" style="padding-left: 20px; padding-right: 0px; padding-top: 0px; padding-bottom: 0px; text-align: left; width: 40%">
+								<div class="p-intro column" style="padding-left: 20px; padding-right: 0px; padding-top: 0px; padding-bottom: 0px; text-align: left; width: 55%; font-size: 13px;">
 									<%=user.get("PRO_NAME")%></div>
-								<div class="column" style="padding-left: 20px; padding-right: 0px; padding-top: 0px; padding-bottom: 0px; text-align: center; width: 20%">
+								<div class="column" style="padding-left: 20px; padding-right: 0px; padding-top: 0px; padding-bottom: 0px; text-align: center; width: 15%; font-size: 13px;">
 									<%=user.get("PRO_END")%>
 								</div>
-								<div class="column" style="padding-left: 20px; padding-right: 0px; padding-top: 0px; padding-bottom: 0px; text-align: center; width: 20%">
+								<div class="column" style="padding-left: 20px; padding-right: 0px; padding-top: 0px; padding-bottom: 0px; text-align: center; width: 10%; font-size: 13px;">
 									<%=user.get("USERCOUNT")%>
 									명
 								</div>
-								<div class="column" style="padding-left: 20px; padding-right: 0px; padding-top: 0px; padding-bottom: 0px; text-align: center; width: 20%">
+								<div class="column" style="padding-left: 20px; padding-right: 0px; padding-top: 0px; padding-bottom: 0px; text-align: center; width: 20%; font-size: 13px;">
 									<%=user.get("CATE_SUB")%>
 								</div>
 								<div class="ui container" style="padding-top: 0px; padding-bottom: 10px; padding-left: 0px; padding-right: 0px;">
@@ -192,17 +194,17 @@
 					<div class="ui" style="padding-left: 5px; padding-right: 5px; padding-top: 0px; padding-bottom: 0px; text-align: left;">
 						<div class="ui column segment" style="padding-top: 0px;">
 							<div class="ui orange top left attached label" style="position: absolute; top: -10px;left: -10px;">
-								<a href="/project/projectContractInProgress">>>진행중인 프로젝트<<</a>
+								<a href="/project/projectContractInProgress">진행중인 프로젝트</a>
 							</div>
 							<div class="ui six column grid container" style="padding-left: 0px; padding-right: 0px; padding-top: 10px; padding-bottom: 0px; text-align: center;">
 								<!-- <h3 class="ui header" style="margin-top: 15px;">프로젝트 진행중</h3> -->
-								<table class="ui inverted  grey table" style="padding: 0; margin-bottom: 15px; ">
+								<table class="ui table" style="padding: 0; margin-bottom: 15px; ">
 									<thead>
 										<tr>
-											<th>프로젝트 제목</th>
-											<th>금액</th>
-											<th>기간</th>
-											<th>마감기한</th>
+											<th style="color:#fff; background-color:#848484; height:15px;">프로젝트 제목</th>
+											<th style="color:#fff; background-color:#848484; height:15px;">금액</th>
+											<th style="color:#fff; background-color:#848484; height:15px;">기간</th>
+											<th style="color:#fff; background-color:#848484; height:15px;">마감기한</th>
 										</tr>
 									</thead>
 									<tbody>
@@ -269,6 +271,7 @@
 					</div>
 				</div>
 			</div>
+<!-- 20181021 수정 ******************************************************************************* -->				
 			<!-- 우측메뉴 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
 			<div class="ui column" style="width: 20%; padding-top: 0px; padding-left: 0px; padding-right: 0px">
 

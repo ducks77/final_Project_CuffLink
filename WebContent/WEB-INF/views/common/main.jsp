@@ -3,12 +3,25 @@
 <%@page import="java.util.Map"%>
 <%@page import="java.util.List"%>
 <html>
+<!-- 웹 문서 제작자 설정 -->
+<meta name="author" content="ducks77">
+
+<!-- 웹 문서 설명 설정 -->
+<meta name="description" content="CuffLink">
+
+<!-- 웹 문서 키워드 설정 -->
+<meta name="keywords" content="CuffLink, ducks77">
+
+<!-- 검색엔진 허가 설정 -->
+<meta name="robots" content="all">
+
+<!-- 모바일 웹을 위한 설정 -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<!-- 호환성 설정 최신버전으로 확인해라 안적어도됨. -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+
 <head>
-<style type="text/css">
-.p-intro {
-	overflow: hidden;white-space: nowrap;text-overflow: ellipsis;
-	}
-</style>
 <meta charset="UTF-8">
 <jsp:include page="./ui.jsp" />
 <%
@@ -37,13 +50,20 @@
 </head>
 <body>
 
-	<div class="wrap">
+	<div class="wrap" style="position: relative;">
+		<div class="mode" style="position: absolute; top: 0;left: 0;">
+			<a href="/modeViewSets/modeview.jsp" style="font-size: 9px; background-color: rgba(0,0,0,0.2);">반응형</a>
+		</div>
 		<div class="ui container">
 			<div class="ui secondary pointing menu" style="margin-bottom: 50px;">
-				<a href="/"> <img src="/image/logo.jpg" class="ui image tiny" alt="" style="float: left; margin-right: 10px" />
-				</a> <a href="/auth/login" id="projectRegister" class="projectRegister item" style="font-weight: bold">프로젝트 등록 </a> <a href="../project/page?pagenum=1" id="projectFind" class="projectFind item" style="font-weight: bold">프로젝트 찾기 </a> <a href="../partners/partnersList" id="partnersList" class="partnersList item" style="font-weight: bold">파트너스 목록 </a>
+				<a href="/"> 
+					<img src="/image/logo.jpg" class="ui image tiny" alt="" style="float: left; margin-right: 10px" />
+				</a> 
+				<a href="/auth/login" id="projectRegister" class="projectRegister item" style="font-weight: bold">프로젝트 등록 </a> 
+				<a href="../project/page?pagenum=1" id="projectFind" class="projectFind item" style="font-weight: bold">프로젝트 찾기 </a> 
+				<a href="../partners/partnersList" id="partnersList" class="partnersList item" style="font-weight: bold">파트너스 목록 </a>
 				<div class="right menu">
-					<div class="item">
+					<div class="item loginjoin">
 						<button class="ui button" style="margin-right: 10px;" onclick="location.href='/auth/login'">로그인</button>
 						<button class="ui primary button" style="margin-right: 10px;" onclick="location.href='/auth/join'">회원가입</button>
 					</div>
@@ -61,11 +81,11 @@
 		</div>
 	</div>
 	<p></p>
-	<div class="ui container" style="margin-bottom: 16px;">
-		<div class="ui segments">
-			<div class="ui horizontal segments">
+	<div class="ui container thapp" style="margin-bottom: 16px;padding: 0;">
+		<div class="ui segments" style="padding:0;margin: 0;">
+			<div class="ui three column grid segments" style="padding: 0;margin: 0;">
 
-				<div class="ui segment" style="width: 33.3%; background-color: #F5A9A9; border: 1px solid #fff;">
+				<div class="ui column segment happ" style="width: 33.3%; background-color: #F5A9A9; border: 1px solid #fff;">
 					<div style="background-color: #fff;">
 						<h3>등록된 프로젝트</h3>
 					</div>
@@ -74,7 +94,7 @@
 					</h3>
 
 				</div>
-				<div class="ui segment" style="width: 33.3%; background-color: #F5A9A9; border: 1px solid #fff;">
+				<div class="ui column segment happ" style="width: 33.3%; background-color: #F5A9A9; border: 1px solid #fff;">
 					<div style="background-color: #fff;">
 						<h3>프로젝트 등록 금액</h3>
 					</div>
@@ -83,7 +103,7 @@
 					</h3>
 
 				</div>
-				<div class="ui segment" style="width: 33.3%; background-color: #F5A9A9; border: 1px solid #fff;">
+				<div class="ui column segment happ" style="width: 33.3%; background-color: #F5A9A9; border: 1px solid #fff;">
 					<div style="background-color: #fff;">
 						<h3>개발회사 프리랜서</h3>
 					</div>
@@ -97,27 +117,33 @@
 		</div>
 	</div>
 	<div style="background-color: rgb(243, 244, 247);">
-		<div class="ui container" style="padding-top: 5px; padding-bottom: 5px; font-size: 1.2em; font-weight: bold; text-align: center; background-color: #CED8F6;">
-			<img src="../image/logo.png" alt="" style="margin-right: 10px;" /> 등록된 프로젝트
+		<div class="ui container tinsert" style="padding-top: 5px; padding-bottom: 5px; font-size: 1.2em; font-weight: bold; text-align: center; background-color: #CED8F6;">
+			<img src="../image/logo.png" alt="" style="margin-right: 10px;" /> 등록된 프로젝트 
 		</div>
 		<div class="ui container" style="padding-top: 20px;">
 			<div class="ui three column grid">
 				<%
 					for (int i = 0; i < 6; i++) {
 				%>
-				<div class="column">
+				<div class="column insert">
 					<div class="ui segment" style="background-color: #E0E6F8;">
 						<div class="p-intro" style="background-color: #D8D8D8;">
 							<a href="#" class="title" style="color: red;"><%=main_pro.get(i).get("PRO_NAME")%></a>
 						</div>
 						<p></p>
-						<span> <i class="won sign icon"></i> <%=main_pro.get(i).get("PRO_PRICE")%>
-						</span> <span class="middle"> <i class="clock outline icon"></i> <%=main_pro.get(i).get("PRO_PERIOD")%>
-						</span> <span> <i class="pencil alternate icon"></i> <%=main_pro.get(i).get("PRO_SKILL")%>
+						<span class="f-won"> 
+							<i class="won sign icon"></i> <%=main_pro.get(i).get("PRO_PRICE")%>
+						</span> 
+						<span class="f-won"> 
+							<i class="clock outline icon"></i> <%=main_pro.get(i).get("PRO_PERIOD")%>
+						</span> 
+						<span class="f-won"> 
+							<i class="pencil alternate icon"></i> <%=main_pro.get(i).get("PRO_SKILL")%>
 						</span>
 						<p></p>
 						<p class="content">
-							<프로젝트 진행 방식> 시작 시점에 오프라인 미팅 필요 진행 간 정기 미팅을 통해 업무 상황 공유 부탁드립니다.프로젝트 진행 방식> 시작 시점에 오프라인 미팅 필요 진행 간 정기 미팅을 통해 업무 상황 공유 부탁드립니다. 
+							<span> <%=main_pro.get(i).get("PRO_CONTENTS")%>
+							</span>
 						</p>
 					</div>
 				</div>
@@ -132,7 +158,7 @@
 		<!-- container -->
 	</div>
 	<div style="height: 20px;"></div>
-	<div class="ui container" style="position: relative; padding-top: 5px; padding-bottom: 5px; font-size: 1.2em; font-weight: bold; text-align: center; background-color: #CED8F6;">
+	<div class="ui container csearch" style="position: relative; padding-top: 5px; padding-bottom: 5px; padding-left: 0;padding-right: 0;margin-left: 0;margin-right: 0;font-size: 1.2em; font-weight: bold; text-align: center; background-color: #CED8F6;">
 		<img src="../image/logo.png" alt="" style="margin-right: 10px;" /> 클라이언트 의뢰 주변 검색
 		<div class="ui mini search" style="position: absolute; top: 2px; right: 0; float: right;">
 			<div class="ui icon input">
@@ -146,22 +172,28 @@
 		</div>
 	</div>
 
-	<div class="ui container" style="padding-top: 0px; text-align: center; height: 480px; background-color: #dedede;">
-		<div>
+	<div class="ui container jido" style="margin-left: 0;margin-right: 0;padding-left: 0;padding-right: 0;padding-top: 0px; text-align: center; height: 480px; background-color: #dedede;">
+		<div style="margin-left: 0;margin-right: 0;padding-left: 0;padding-right: 0;">
 			<jsp:include page="../map/Mapdisplay1.jsp" />
 		</div>
 	</div>
 	<div style="height: 30px; margin: 0 auto;" align="center"></div>
 
-	<div class="ui container" style="padding-top: 5px; padding-bottom: 5px; font-size: 1.2em; font-weight: bold; text-align: center; background-color: #CED8F6;">
+	<div class="ui container wcompany" style="margin-left: 0;margin-right: 0;padding-top: 5px; padding-bottom: 5px; font-size: 1.2em; font-weight: bold; text-align: center; background-color: #CED8F6;">
 		<img src="../image/logo.png" alt="" style="margin-right: 10px;" /> 우리와 함께하는 회사
 	</div>
 	<div class="ui container" style="padding-top: 20px; text-align: center; background-color: #E0E6F8;">
 		<div class="ui small images">
-			<img class="logo" src="../image/logo1.png"> <img class="logo" src="/image/logo2.png"> <img class="logo" src="/image/logo3.png"> <img class="logo" src="/image/logo4.png"> <img class="logo" src="/image/logo5.png"> <img class="logo" src="/image/logo6.png">
+			<img class="logo" src="../image/logo1.png"> 
+			<img class="logo" src="/image/logo2.png"> 
+			<img class="logo" src="/image/logo3.png"> 
+			<img class="logo" src="/image/logo4.png"> 
+			<img class="logo" src="/image/logo5.png"> 
+			<img class="logo" src="/image/logo6.png">
 		</div>
 	</div>
-	<script>
+
+	<!-- <script>
 		function autoSplit(len) { // 자동으로 len 길이만큼 글자수를 잘라주고 난후 ... 을 붙여준다
 			var leng = $('.content').text().length;
 			if (leng > 100) {
@@ -171,11 +203,10 @@
 		}
 		autoSplit(100);
 
-		/* var lengt = $('.title').text().length;
+		var lengt = $('.title').text().length;
 		if (lengt > 16) {
 			$('.title').text($('.title').text().substring(0, 16)).append('...')
-		} */
-	</script>
-
+		} 
+	</script> -->
 </body>
 </html>
