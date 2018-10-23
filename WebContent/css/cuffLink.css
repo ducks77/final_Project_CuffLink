@@ -1,5 +1,7 @@
 @charset "utf-8";
 
+
+
 :placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
     color: red;
     opacity: 1; /* Firefox */
@@ -146,6 +148,12 @@ hr.garo {
 
 }
 
+.footermenu {
+	color: #ECF6CE;
+}
+
+hr.fgaro { border: solid #585858; border-width: 1px 0 0; }
+
 hr.space
 
 hr.dotted {
@@ -204,6 +212,10 @@ h11 {
 div.h11 { /* 프로젝트찾기 카테고리 글씨 */
    font-size:14px;
    margin-left:25px;
+}
+
+.footer {
+	background-color: #2d343f;
 }
 
 div.h15 { /* 프로젝트찾기 카테고리 글씨 */

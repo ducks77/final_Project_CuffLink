@@ -8,21 +8,8 @@
 #nav {display: none;}
 #nav.show {display: block;}
 
-#videobcg { 
-     position: absolute;
-     top: 0px;
-     left: 0px;
-     min-width: 100%;
-     min-height: 400px;
-     width: auto;
-     height: auto;
-     z-index: -1000;
-     overflow: hidden;
-     opacity: 0.5;
-}
-
 .wrap {
-   /* background-image: url("../image/배너.png"); */
+   background-image: url("../image/배너.png");
    height: 400px;
    background-position: center; /* Center the image */
    background-repeat: no-repeat; /* Do not repeat the image */
@@ -105,10 +92,8 @@ span {
 	padding: 10px;	
 }
 /* 미디어 쿼리 laptap*/
-#naverMap {width: 100%;}
 
 @media (max-width: 1042px) {
-	#naverMap {width: 100%;}
 	.mode {display: none;}
 	.container {width: 100% !important;margin-left: 0 !important; margin-right: 0 !important;}
 	.f-won {display: block;}
@@ -116,8 +101,6 @@ span {
 }
 
 @media (max-width: 800px) {
-	#h33 {font-size: 20px !important;}
-	#naverMap {width: 100%;}
 	.container {width: 100% !important; margin-left: 0 !important; margin-right: 0 !important;}
 	.f-won {display: inline;}
 	.insert {width: 50% !important;}
@@ -126,20 +109,19 @@ span {
 }
 
 @media (max-width: 435px) {
-	#tt {font-size: 36px !important;}
 	#smenu {display: block; position: absolute; top: 0;right: 0; padding: 5px; }
 	#container {display: none;}
 	#tools {display: block;width: 100%;margin-left: 0 !important;margin-right: 0 !important;}
 	#thapp {display: block;width: 100%;margin-left: 0 !important;margin-right: 0 !important;}
 	/* #thapps {display: block;width: 100%;margin-left: 0 !important;margin-right: 0 !important;} */
-	#tinsert {display: block;width: 100%;margin-top: 0px !important;margin-left: 0 !important;margin-right: 0 !important; padding-bottom: 5px !important;font-size: 16px !important; background-color: #000 !important; color:#fff}
+	#tinsert {display: block;width: 100%;margin-left: 0 !important;margin-right: 0 !important; padding-bottom: 5px !important;font-size: 16px !important; background-color: #000 !important; color:#fff}
 	/* #tinserts {display: block;width: 100%;margin-left: 0 !important;margin-right: 0 !important; padding-bottom: 5px !important;} */
 	#insert {display: block;width: 100% !important;padding-left: 0 !important; padding-right: 0 !important;margin-left: 0 !important;margin-right: 0 !important; padding-bottom: 5px !important;}
 	#icon1 {color:#fff !important;}
 	#img1 {display: none;}
 	#jido {display: block;width: 100%;padding-left: 5px !important;margin-left: 0 !important;margin-right: 0 !important;font-size: 16px !important; background-color: #000 !important; color:#fff}
 	/* #jidos {display: block;width: 100%;margin-left: 0 !important;margin-right: 0 !important;} */
-	#jidov {display: block;width: 100%;margin-left: 0 !important;margin-right: 0 !important; height:480px !important;} 
+	#jidov {display: block;width: 100%;margin-left: 0 !important;margin-right: 0 !important; height:250px !important;} 
 	/* #jidovs {display: block;width: 100%;margin-left: 0 !important;margin-right: 0 !important;} */
 	#wcompany {display: block;width: 100%;margin-left: 0 !important;margin-right: 0 !important;font-size: 16px !important; background-color: #000 !important; color:#fff}
 	#wcompanyv {display: block;width: 100%;margin-left: 0 !important;margin-right: 0 !important;}
@@ -159,7 +141,7 @@ span {
 	.partnersList {display: none !important;}
 	/* 등록된 프로젝트 위*/
 	.thapp {margin-left: 0 !important ;margin-right: 0 !important;}
-	.happ {display: block; width:100% !important; background-color: #04B4AE !important; }
+	.happ {display: block; width:100% !important; background-color: #04B4AE !important;}
 	/* 등록된 프로젝트 아래*/
 	/* .tinsert {margin-left: 0 !important ;margin-right: 0 !important;}
 	.insert {width: 100% !important; margin-left: 0 !important;margin-right: 0 !important;padding-top: 5px !important; padding-bottom: 5px !important;} */
@@ -168,5 +150,4 @@ span {
 	.csearch {font-size: 14px !important; text-align: left !important; margin-left:0 !important; margin-right:0 !important;}
 	/* .wcompany {margin-left: 0 !important;margin-right: 0 !important;} */
 	.logo {width:25% !important; height: 25% !important;} 
-	#tt3 {font-size: 18px !important;}
 }

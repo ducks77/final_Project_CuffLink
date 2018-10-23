@@ -1,11 +1,11 @@
 <%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>
 <%
-	String url = "http://192.168.0.8:8080/";
+	String url = "http://localhost:8080/";
 %>
 <html lang="ko" class="sh_overflow"><head>
 <jsp:include page="./ui.jsp" />
 <link rel="stylesheet" href="../modeViewSets/css/reaction.css">
-<title>커프링크</title>
+<title>커프링크1</title> 
 </head>
 <body>
 <div id="mode_view">

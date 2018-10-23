@@ -124,7 +124,7 @@
 					<div id="News" style="background-color: #fff;"></div>
 				</div>
 				<!-- 중간 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-				<div class="ui segment container" style="padding: 20px; margin-bottom: 50px; padding-bottom: 20px; left: 0px; border: 1px solid #dedede; background-color: #E6E6E6; ">
+				<div class="ui segment container" style="padding: 20px; margin-bottom: 10px; padding-bottom: 20px; left: 0px; border: 1px solid #dedede; background-color: #E6E6E6; ">
 					<div class="ui three column grid container">
 						<div class="column" style="padding-bottom: 20px; width: 50%;">
 							<h3 style="text-align: left">내 프로젝트</h3>

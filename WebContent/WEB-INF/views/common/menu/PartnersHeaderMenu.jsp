@@ -21,7 +21,7 @@
 <jsp:include page="../ui.jsp" />
 <link rel="stylesheet" href="../../css/cuffLink.css" />
 <link rel="stylesheet" href="../../css/login.css" />
-<div class="ui inverted segment" style="margin-top: 0px; padding-top: 3px; padding-bottom: 3px; margin-bottom: 0px;">
+<div class="ui  segment" style="margin-top: 0px; padding-top: 3px; padding-bottom: 3px; margin-bottom: 0px;background-color:#2d3a45;">
 	<div class="ui container">
 		<a href="../partners/partnersMyWishket"><img src="/image/logo.jpg" class="ui image tiny" alt="" style="float: left; margin-right: 10px" /></a>
 		<div class="ui inverted secondary pointing menu" style="margin-top: 0px;">
@@ -53,7 +53,7 @@
 			</div>
 			<form id="f_logout">
 				<div id="menu_list" class="ui dropdown" style="width: 150px;">
-					<div class="ui dropdown fluid black button" id="out_id">
+					<div class="ui dropdown fluid black button" id="out_id" style="background-color:#2d3a45;">
 						<%
 							if (info != null)
 									out.print(info.get("S_ID"));
@@ -81,7 +81,7 @@
 </div>
 
 <!-- 네비게이션메뉴 -->
-<div class="submenu" style="border-bottom: groove thin;">
+<div class="submenu" style="border-bottom: groove thin;background-color: #dadee2;">
 	<div class="ui container">
 		<div class="ui secondary menu">
 			<a href="../partners/partnersMyprofileMain?s_email=<%=email%>" id="partnersMyprofileMain" class="partnersMyprofileMain item"> 내 프로필 </a> 

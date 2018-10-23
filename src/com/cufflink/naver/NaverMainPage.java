@@ -129,7 +129,7 @@ public class NaverMainPage {
 		 String id  = req.getParameter("f_email_check");
 		 String smtpServer= "smtp.naver.com";
 		   final String sendId = "cufflink0828";
-		   final String sendPass = "7YsSwj";
+		   final String sendPass = "!BANK0102";
 		   String sendMailAddr = "cufflink0828@naver.com";
 		   int smtpPort=465;
 

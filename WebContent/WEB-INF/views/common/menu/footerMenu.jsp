@@ -2,17 +2,38 @@
 <!-- *************************************************************************20181013 화면로딩중 추가 -->
 <jsp:include page="../loading.jsp" /> 
 <!-- *************************************************************************20181013 화면로딩중 추가 -->
+
 <div class="ui content-footer four column grid container">
 
 	<div class="column column-footer container" style="width: 40%; height: 180px; text-align: left">
 		<h3>
 			<img src="../../image/logo.jpg" class="ui image tiny" alt="" style="float: left; margin-right: 10px" />CuffLink
 		</h3>
-		<br> 전화: <br> 이메일: <br> 운영시간: <br> 주소: <br> ©2018 CuffLink Corp.
+		<font color="gray"><br> 전화:02-1588-1588 <br> 이메일:admin@cufflink.com <br> 운영시간:09:00~18:00 <br> 주소:서울특별시 금천구 가산디지털2로 123 월드메르디앙벤처센터II  <br> ©2018 CuffLink Corp.</font>
 	</div>
-	<div class="column column-footer container" style="width: 20%; height: 180px; text-align: left">클라이언트 메뉴</div>
-	<div class="column column-footer container" style="width: 20%; height: 180px; text-align: left">파트너스 메뉴</div>
-	<div class="column grid container" style="width: 20%; height: 180px; text-align: left">게시판</div>
+	<div class="column column-footer container" style="width: 20%; height: 180px; text-align: left"><font color="gray">클라이언트 메뉴</font>
+		<hr class="fgaro">
+		<a href="#a" class="footermenu">프로젝트 등록하기</a>
+		<br> <a href="#a" class="footermenu">지원자 모집중</a>
+		<br> <a href="#a" class="footermenu">진행중인 프로젝트</a>
+		<br> <a href="#a" class="footermenu">종료된 프로젝트</a>
+		
+	</div>
+	<div class="column column-footer container" style="width: 20%; height: 180px; text-align: left"><font color="gray">파트너스 메뉴</font>
+		<hr class="fgaro">
+		 <a href="#a" class="footermenu">내 프로필</a>
+		<br> <a href="#a" class="footermenu">관심 프로젝트</a>
+		<br> <a href="#a" class="footermenu">지원 내역</a>
+		<br> <a href="#a" class="footermenu">진행 중인 프로젝트</a>
+		<br> <a href="#a" class="footermenu">완료한 프로젝트</a>
+	</div>
+	<div class="column grid container" style="width: 20%; height: 180px; text-align: left"><font color="gray">공통 메뉴</font>
+		<hr class="fgaro">
+		<a href="#a" class="footermenu">프로젝트 찾기</a>
+		<br> <a href="#a" class="footermenu">파트너스 목록</a>
+		<br> <a href="#a" class="footermenu">뉴스센터</a>
+		<br> <a href="#a" class="footermenu">프로젝트 등록 도움말</a>
+	</div>
 </div>
 
 <!-- chatting -->
@@ -61,7 +82,7 @@
 <script src="../js/headerMenu.js"></script>
 
 <script>
-	var socket = new WebSocket('ws://192.168.0.8:8080/WebSocketServer')
+	var socket = new WebSocket('ws://192.168.0.30:8080/WebSocketServer')
 	var info = {
 		id : '<%=request.getRemoteAddr()%>',
 		message : '입장'
