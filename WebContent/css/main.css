@@ -110,26 +110,35 @@ span {
 @media (max-width: 1042px) {
 	#naverMap {width: 100%;}
 	.mode {display: none;}
+	#container {position: fixed !important;z-index: 2000;top: 0;left: 0;background-color: rgba(255,255,255,0.7); height: 48px !important;}
 	.container {width: 100% !important;margin-left: 0 !important; margin-right: 0 !important;}
+	#tinfo {margin-top: 40px !important;}
+	.tinsert {margin-top: 0px !important;}
 	.f-won {display: block;}
 	.logo {width:14% !important; height: 14% !important;}
+	.wrap { height: 240px;}
 }
 
 @media (max-width: 800px) {
+	.wrap { height: 220px;}
 	#h33 {font-size: 20px !important;}
 	#naverMap {width: 100%;}
+	#container {position: fixed !important;z-index: 2000;top: 0;left: 0;background-color: rgba(255,255,255,0.7); height: 48px !important;}
 	.container {width: 100% !important; margin-left: 0 !important; margin-right: 0 !important;}
 	.f-won {display: inline;}
-	.insert {width: 50% !important;}
+	.tinsert {margin-top: 0px !important;}
+	.insert {width: 50% !important; }
 	.logo {width:13% !important; height: 13% !important;}
+	
 	
 }
 
 @media (max-width: 435px) {
+	
 	#tt {font-size: 36px !important;}
 	#smenu {display: block; position: absolute; top: 0;right: 0; padding: 5px; }
 	#container {display: none;}
-	#tools {display: block;width: 100%;margin-left: 0 !important;margin-right: 0 !important;}
+	#tools {position: fixed !important;display: block;width: 100%;margin-left: 0 !important;margin-right: 0 !important;top: 0;left: 0;z-index: 2000; background-color: rgba(255,255,255,0.7)}
 	#thapp {display: block;width: 100%;margin-left: 0 !important;margin-right: 0 !important;}
 	/* #thapps {display: block;width: 100%;margin-left: 0 !important;margin-right: 0 !important;} */
 	#tinsert {display: block;width: 100%;margin-top: 0px !important;margin-left: 0 !important;margin-right: 0 !important; padding-bottom: 5px !important;font-size: 16px !important; background-color: #000 !important; color:#fff}
@@ -143,14 +152,14 @@ span {
 	/* #jidovs {display: block;width: 100%;margin-left: 0 !important;margin-right: 0 !important;} */
 	#wcompany {display: block;width: 100%;margin-left: 0 !important;margin-right: 0 !important;font-size: 16px !important; background-color: #000 !important; color:#fff}
 	#wcompanyv {display: block;width: 100%;margin-left: 0 !important;margin-right: 0 !important;}
-	.nav {background-color: #000; padding-top: 5px; padding-bottom: 5px;}
+	.nav { background-color: rgba(0,0,0,0.8); padding-top: 5px; padding-bottom: 5px;}
 	ul {padding-left: 20px;}
 	li {list-style-type : none;}
 	li a {color: #fff;}
 	/* 메뉴밑에 높이 */
 	.pointing{margin-bottom: 20px !important;}
 	/* 상단 이미지 높이 */
-	.wrap {height: auto !important;padding-bottom: 20px !important;}
+	.wrap {height: auto !important;padding-bottom: 00px !important;}
 	/* 타이틀제목 사라지기 */
 	.t-name{display: none !important;}
 	.loginjoin {display: none !important; }
@@ -159,7 +168,7 @@ span {
 	.partnersList {display: none !important;}
 	/* 등록된 프로젝트 위*/
 	.thapp {margin-left: 0 !important ;margin-right: 0 !important;}
-	.happ {display: block; width:100% !important; background-color: #04B4AE !important; }
+	.happ {display: block; width:100% !important; background-color: #04B4AE !important;margin-bottom: 5px !important; }
 	/* 등록된 프로젝트 아래*/
 	/* .tinsert {margin-left: 0 !important ;margin-right: 0 !important;}
 	.insert {width: 100% !important; margin-left: 0 !important;margin-right: 0 !important;padding-top: 5px !important; padding-bottom: 5px !important;} */

@@ -5,7 +5,7 @@
 <html lang="ko" class="sh_overflow"><head>
 <jsp:include page="./ui.jsp" />
 <link rel="stylesheet" href="../modeViewSets/css/reaction.css">
-<title>커프링크1</title> 
+<title>커프링크 반응형 View</title> 
 </head>
 <body>
 <div id="mode_view">
